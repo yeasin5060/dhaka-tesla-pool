@@ -7,10 +7,10 @@ import {
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-import Input from "../../components/ui/Input";
-import Button from "../../components/ui/Button";
+import Input from "@/components/ui/Input";
+import Button from "@/components/ui/Button";
 
-import { useAuth } from "../../hooks/useAuth";
+import { useAuth } from "@/hooks/useAuth";
 
 export default function LoginPage() {
   const router = useRouter();

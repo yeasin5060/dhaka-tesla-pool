@@ -2,8 +2,9 @@
 
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { ROUTES } from "./lib/constants";
-import { useAuth } from "./hooks/useAuth";
+
+import { useAuth } from "@/hooks/useAuth";
+import { ROUTES } from "@/lib/constants";
 
 export default function HomePage() {
   const router = useRouter();

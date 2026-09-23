@@ -1,11 +1,11 @@
-import axiosInstance from "../lib/axios";
+import axiosInstance from "@/lib/axios";
 
 import type {
   DriverRequest,
-} from "../types/driver";
+} from "@/types/driver";
 
-import type { Pool, Vehicle } from "../types/pool";
-import type { RideRequest } from "../types/ride";
+import type { Pool, Vehicle } from "@/types/pool";
+import type { RideRequest } from "@/types/ride";
 
 export const toggleDriverOnline =
   async (
@@ -17,6 +17,16 @@ export const toggleDriverOnline =
       }>("/driver/online", {
         isOnline,
       });
+
+    return response.data.vehicle;
+  };
+
+  export const getDriverVehicle =
+  async (): Promise<Vehicle> => {
+    const response =
+      await axiosInstance.get<{
+        vehicle: Vehicle;
+      }>("/driver/vehicle");
 
     return response.data.vehicle;
   };

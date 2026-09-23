@@ -1,6 +1,6 @@
-import axiosInstance from "../lib/axios";
+import axiosInstance from "@/lib/axios";
 
-import type { Pool } from "../types/pool";
+import type { Pool } from "@/types/pool";
 
 export const getPools = async () => {
   const response =

@@ -1,9 +1,9 @@
-import axiosInstance from "../lib/axios";
+import axiosInstance from "@/lib/axios";
 
 import type {
   CreateRideData,
   RideRequest,
-} from "../types/ride";
+} from "@/types/ride";
 
 export const createRide = async (
   data: CreateRideData

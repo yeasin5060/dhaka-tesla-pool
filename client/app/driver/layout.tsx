@@ -1,6 +1,6 @@
-import DashboardLayout from "../components/layout/DashboardLayout";
+import DashboardLayout from "@/components/layout/DashboardLayout";
 
-export default function DriverLayout({
+export default function PassengerLayout({
   children,
 }: {
   children: React.ReactNode;

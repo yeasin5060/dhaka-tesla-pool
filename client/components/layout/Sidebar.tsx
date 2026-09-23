@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { useAuth } from "../../hooks/useAuth";
+import { useAuth } from "@/hooks/useAuth";
 
 export default function Sidebar() {
   const pathname =
@@ -33,24 +33,23 @@ export default function Sidebar() {
   ];
 
   const driverLinks = [
-    {
-      label: "Dashboard",
-      href: "/driver/dashboard",
-    },
-    {
-      label: "Ride Requests",
-      href: "/driver/requests",
-    },
-    {
-      label: "Current Ride",
-      href: "/driver/current-ride",
-    },
-    {
-      label: "History",
-      href: "/driver/history",
-    },
-  ];
-
+  {
+    label: "Dashboard",
+    href: "/driver/dashboard",
+  },
+  {
+    label: "Ride Requests",
+    href: "/driver/requests",
+  },
+  {
+    label: "Current Pool",
+    href: "/driver/current-ride",
+  },
+  {
+    label: "History",
+    href: "/driver/history",
+  },
+];
   const links =
     user.role === "PASSENGER"
       ? passengerLinks

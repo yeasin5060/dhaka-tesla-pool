@@ -1,11 +1,11 @@
+import axiosInstance from "@/lib/axios";
 
 import type {
   AuthResponse,
   LoginData,
   RegisterData,
   User,
-} from "../types/auth";
-import axiosInstance from "../lib/axios";
+} from "@/types/auth";
 
 export const registerUser = async (
   data: RegisterData
